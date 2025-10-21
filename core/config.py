@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     PROJECT_DESCRIPTION: str = "Plantilla FastAPI con MongoDB y Postgres (SQLModel)."
     PROJECT_VERSION: str = "1.0.0"
     API_PREFIX: str = "/api/v1"
-    CORS_ORIGINS: List[str] = ["http://localhost:4321", "https://lims-qc-ui.vercel.app/"]
+    CORS_ORIGINS: List[str] = ["http://localhost:4321", "https://lims-qc-ui.vercel.app"]
 
     model_config = SettingsConfigDict(
         env_file=BASE_DIR / "config.env",
